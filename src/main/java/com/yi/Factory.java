@@ -21,5 +21,7 @@ public class Factory {
 
     public Click getClick(){
         return this.click;
+
+
     }
 }
