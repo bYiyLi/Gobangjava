@@ -1,8 +1,5 @@
 package com.yi.Mange;
-import com.yi.Interact.ChessBoard;
-import com.yi.Interact.Click;
-import com.yi.Interact.WinUi;
-import com.yi.Interact.ecptoma;
+import com.yi.Interact.*;
 import com.yi.Logic.Data;
 import com.yi.base.Schema;
 import com.yi.base.chessPiecs;
@@ -29,6 +26,8 @@ public class Mange implements Click {
             data=new Data(x,y);
             down=new ChessBoard(x,y,this);
             whoNew=who.me;
+        }else if (this.schema.equals(Schema.line)){
+            new NetLineUi();
         }
 
     }
