@@ -38,9 +38,9 @@ public class SignInUi implements ActionListener{
         this.SignInButton.addActionListener(this);
         this.SignInButton.setBounds(120,240,320,50);
         this.jFrame.add(this.SignInButton);
-        this.Simple=new JRadioButton("简单模式");
-        this.Commonly=new JRadioButton("一般模式",true);
-        this.Difficulty=new JRadioButton("困难模式");
+        this.Simple=new JRadioButton("9X9");
+        this.Commonly=new JRadioButton("12X12",true);
+        this.Difficulty=new JRadioButton("18X18");
         this.Pattern=new ButtonGroup();
         this.Pattern.add(this.Simple);
         this.Pattern.add(this.Commonly);

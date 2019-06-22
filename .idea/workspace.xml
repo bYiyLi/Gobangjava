@@ -47,9 +47,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="264">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#Click#0;class#Mange#0" />
               </folding>
             </state>
@@ -71,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="66" selection-end-column="48" />
+            <state relative-caret-position="390">
+              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#121#122#0" expanded="true" />
@@ -234,6 +235,15 @@
               <item name="GobangJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="GobangJava" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yi" type="462c0819:PsiDirectoryNode" />
+              <item name="Mange" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GobangJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GobangJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -324,7 +334,7 @@
       <updated>1560778408427</updated>
       <workItem from="1560778414037" duration="1736000" />
       <workItem from="1560941972785" duration="1925000" />
-      <workItem from="1561018881430" duration="49053000" />
+      <workItem from="1561018881430" duration="49534000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1561177115275</created>
@@ -410,11 +420,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561183986484</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.1">
+      <created>1561188682600</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561188682601</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1.1">
+      <created>1561188863769</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561188863769</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52714000" />
+    <option name="totallyTimeSpent" value="53195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,16 +641,6 @@
     <entry file="file://$PROJECT_DIR$/GobangJava.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="method#Click#0;class#Mange#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1_0.patch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -683,10 +697,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Click#0;class#Mange#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="66" selection-end-column="48" />
+        <state relative-caret-position="390">
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#121#122#0" expanded="true" />
