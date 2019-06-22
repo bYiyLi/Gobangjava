@@ -12,7 +12,7 @@ public class WinUi implements ActionListener{
         }else if (winner==who.other) {
             image = new ImageIcon("src/main/resources/image0.png");
         }
-        this.jFrame=new JFrame("赢家：");
+        this.jFrame=new JFrame("赢家是：");
         this.jFrame.setSize(200,200);
         jbutton=new JButton();
         jbutton.setIcon(image);
