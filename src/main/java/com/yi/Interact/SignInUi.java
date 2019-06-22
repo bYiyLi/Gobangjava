@@ -66,7 +66,7 @@ public class SignInUi implements ActionListener{
             System.out.println(radioButton.getText()+ " : "
                     + radioButton.isSelected());
         }
-        Enumeration<AbstractButton> enu2 = Pattern.getElements();
+        Enumeration<AbstractButton> enu2 = TypeGame.getElements();
         while (enu2.hasMoreElements()) {
             AbstractButton radioButton = enu2.nextElement();
             System.out.println(radioButton.getText()+ " : "
