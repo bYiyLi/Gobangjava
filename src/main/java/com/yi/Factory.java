@@ -20,8 +20,8 @@ public class Factory {
     }
 
     public Click getClick(){
+        System.out.println("");
         return this.click;
-
 
 
     }
