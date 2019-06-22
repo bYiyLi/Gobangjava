@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e185e1e7-c32c-4592-8e2c-315c22162791" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="225">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -264,7 +264,7 @@
       <updated>1560778408427</updated>
       <workItem from="1560778414037" duration="1736000" />
       <workItem from="1560941972785" duration="1925000" />
-      <workItem from="1561018881430" duration="42035000" />
+      <workItem from="1561018881430" duration="42067000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1561177115275</created>
@@ -287,11 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561177375698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.1">
+      <created>1561177616270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561177616270</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45696000" />
+    <option name="totallyTimeSpent" value="45728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,8 +535,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="225">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
