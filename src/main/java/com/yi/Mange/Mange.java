@@ -1,6 +1,7 @@
 package com.yi.Mange;
 import com.yi.Interact.ChessBoard;
 import com.yi.Interact.Click;
+import com.yi.Interact.WinUi;
 import com.yi.Interact.ecptoma;
 import com.yi.Logic.Data;
 import com.yi.base.Schema;
@@ -24,25 +25,37 @@ public class Mange implements Click {
     }
     public Mange(int x,int y,Schema tem){
         schema=tem;
-        data=new Data(x,y);
-        down=new ChessBoard(x,y,this);
-        whoNew=who.me;
+        if (this.schema.equals(Schema.PvP)){
+            data=new Data(x,y);
+            down=new ChessBoard(x,y,this);
+            whoNew=who.me;
+        }
+
     }
-    private void PvP(int x,int y){
+    private void PvP(int x,int y)  {
         boolean t=false;
         if (whoNew==who.me){
             t=data.judge(x,y,chessPiecs.me);
             down.dowm(x,y, chessPiecs.me);
             whoNew=who.other;
+            if (t){
+                new WinUi(who.me);
+                ((ChessBoard) this.down).closeWin();
+            }
         }else if (whoNew==who.other){
             t=data.judge(x,y,chessPiecs.other);
             down.dowm(x,y, chessPiecs.other);
             whoNew=who.me;
+            if (t){
+                new WinUi(who.other);
+                ((ChessBoard) this.down).closeWin();
+            }
         }
-        System.out.println(t);
     }
     private void Ai(int x,int y){
 
     }
-    private void line(int x,int y){}
+    private void line(int x,int y){
+
+    }
 }

@@ -55,6 +55,9 @@ public class ChessBoard extends JPanel implements ecptoma ,MouseListener, MouseM
             this.repaint();
         }
     }
+    public void closeWin(){
+        this.jFrame.dispose();
+    }
     @Override
     public void paint(Graphics g) {
         super.paint(g);
