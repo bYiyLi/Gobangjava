@@ -1,10 +1,12 @@
-package com.yi.Interact.NetUi;
+package com.yi.Mange.Net;
 
 import javax.swing.*;
 
-public class NetLineUi {
+public class NetInitUi {
     private JFrame jFrame;
-    public NetLineUi(){
+    private String LocalAddress;
+    private String networkAddress;
+    public NetInitUi(){
         this.jFrame=new JFrame("Net");
         this.jFrame.setSize(600,400);
         this.jFrame.setVisible(true);

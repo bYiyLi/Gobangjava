@@ -1,6 +1,7 @@
 package com.yi.Mange;
 import com.yi.Interact.*;
 import com.yi.Logic.Data;
+import com.yi.Mange.Net.NetInitUi;
 import com.yi.base.Schema;
 import com.yi.base.chessPiecs;
 import com.yi.base.who;
@@ -27,9 +28,8 @@ public class Mange implements Click {
             down=new ChessBoard(x,y,this);
             whoNew=who.me;
         }else if (this.schema.equals(Schema.line)){
-            new NetLineUi();
+            new NetInitUi();
         }
-
     }
     private void PvP(int x,int y)  {
         boolean t=false;
