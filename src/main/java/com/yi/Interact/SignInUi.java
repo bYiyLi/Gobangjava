@@ -1,13 +1,15 @@
 package com.yi.Interact;
+import com.yi.Mange.Mange;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Enumeration;
 
 public class SignInUi implements ActionListener{
-    private JRadioButton Simple;
-    private JRadioButton Commonly;
-    private JRadioButton Difficulty;
+    private JRadioButton Simple9;
+    private JRadioButton Commonly12;
+    private JRadioButton Difficulty18;
     private ButtonGroup Pattern;
     private ButtonGroup TypeGame;
     private JRadioButton standAlone;
@@ -23,9 +25,9 @@ public class SignInUi implements ActionListener{
         this.jFrame.setSize(600,400);
         this.jFrame.setLayout(null);
         initButton();
-        this.jFrame.add(this.Simple);
-        this.jFrame.add(this.Commonly);
-        this.jFrame.add(this.Difficulty);
+        this.jFrame.add(this.Simple9);
+        this.jFrame.add(this.Commonly12);
+        this.jFrame.add(this.Difficulty18);
         this.jFrame.add(this.PvP);
         this.jFrame.add(this.onLine);
         this.jFrame.add(this.standAlone);
@@ -38,16 +40,16 @@ public class SignInUi implements ActionListener{
         this.SignInButton.addActionListener(this);
         this.SignInButton.setBounds(120,240,320,50);
         this.jFrame.add(this.SignInButton);
-        this.Simple=new JRadioButton("9X9");
-        this.Commonly=new JRadioButton("12X12",true);
-        this.Difficulty=new JRadioButton("18X18");
+        this.Simple9=new JRadioButton("12X12");
+        this.Commonly12=new JRadioButton("16X16",true);
+        this.Difficulty18=new JRadioButton("18X18");
         this.Pattern=new ButtonGroup();
-        this.Pattern.add(this.Simple);
-        this.Pattern.add(this.Commonly);
-        this.Pattern.add(this.Difficulty);
-        this.Simple.setBounds(50,300,100,50);
-        this.Commonly.setBounds(250,300,100,50);
-        this.Difficulty.setBounds(450,300,100,50);
+        this.Pattern.add(this.Simple9);
+        this.Pattern.add(this.Commonly12);
+        this.Pattern.add(this.Difficulty18);
+        this.Simple9.setBounds(50,300,100,50);
+        this.Commonly12.setBounds(250,300,100,50);
+        this.Difficulty18.setBounds(450,300,100,50);
         this.TypeGame=new ButtonGroup();
         this.onLine=new JRadioButton("联机");
         this.PvP=new JRadioButton("对战",true);
@@ -60,18 +62,38 @@ public class SignInUi implements ActionListener{
         this.onLine.setBounds(400,180,100,50);
     }
     public void actionPerformed(ActionEvent e) {
+        int temX=0;
+        int temY = 0;
         Enumeration<AbstractButton> enu1 = Pattern.getElements();
         while (enu1.hasMoreElements()) {
             AbstractButton radioButton = enu1.nextElement();
-            System.out.println(radioButton.getText()+ " : "
-                    + radioButton.isSelected());
+            if (radioButton.isSelected()){
+                if ("12X12".equals(radioButton.getText())) {
+                    temX=temY=12;
+
+                }if ("16X16".equals(radioButton.getText())) {
+                    temX=temY=16;
+                }
+                if ("18X18".equals(radioButton.getText())) {
+                    temX=temY=18;
+                }
+            }
         }
+        new Mange(temX,temY);
         Enumeration<AbstractButton> enu2 = TypeGame.getElements();
         while (enu2.hasMoreElements()) {
             AbstractButton radioButton = enu2.nextElement();
-            System.out.println(radioButton.getText()+ " : "
-                    + radioButton.isSelected());
+            if (radioButton.isSelected()){
+                if ("对战".equals(radioButton.getText())) {
+                    System.out.println(radioButton.getText());
+
+                }if ("联机".equals(radioButton.getText())) {
+                    System.out.println(radioButton.getText());
+                }
+                if ("单机".equals(radioButton.getText())) {
+                    System.out.println(radioButton.getText());
+                }
+            }
         }
-        System.out.println(this.TypeGame.getElements()+"++++++++++++");
     }
 }

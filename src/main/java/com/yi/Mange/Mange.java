@@ -22,10 +22,10 @@ public class Mange implements Click {
             line(x,y);
         }
     }
-    public Mange(){
+    public Mange(int x,int y){
         schema=Schema.PvP;
-        data=new Data(16,16);
-        down=new ChessBoard(16,16,this);
+        data=new Data(x,y);
+        down=new ChessBoard(x,y,this);
         whoNew=who.me;
     }
     private void PvP(int x,int y){
