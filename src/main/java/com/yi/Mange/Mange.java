@@ -22,8 +22,8 @@ public class Mange implements Click {
             line(x,y);
         }
     }
-    public Mange(int x,int y){
-        schema=Schema.PvP;
+    public Mange(int x,int y,Schema tem){
+        schema=tem;
         data=new Data(x,y);
         down=new ChessBoard(x,y,this);
         whoNew=who.me;

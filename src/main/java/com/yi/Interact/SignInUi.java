@@ -1,5 +1,6 @@
 package com.yi.Interact;
 import com.yi.Mange.Mange;
+import com.yi.base.Schema;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -64,6 +65,7 @@ public class SignInUi implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         int temX=0;
         int temY = 0;
+        Schema schema = Schema.PvP;
         Enumeration<AbstractButton> enu1 = Pattern.getElements();
         while (enu1.hasMoreElements()) {
             AbstractButton radioButton = enu1.nextElement();
@@ -79,21 +81,21 @@ public class SignInUi implements ActionListener{
                 }
             }
         }
-        new Mange(temX,temY);
         Enumeration<AbstractButton> enu2 = TypeGame.getElements();
         while (enu2.hasMoreElements()) {
             AbstractButton radioButton = enu2.nextElement();
             if (radioButton.isSelected()){
                 if ("对战".equals(radioButton.getText())) {
-                    System.out.println(radioButton.getText());
+                    schema=Schema.PvP;
 
                 }if ("联机".equals(radioButton.getText())) {
-                    System.out.println(radioButton.getText());
+                    schema=Schema.line;
                 }
                 if ("单机".equals(radioButton.getText())) {
-                    System.out.println(radioButton.getText());
+                    schema=Schema.Ai;
                 }
             }
         }
+        new Mange(temX,temY,schema);
     }
 }
