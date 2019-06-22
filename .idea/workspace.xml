@@ -58,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Factory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="312">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/test/java/text.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/base/Schema.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java" />
+        <option value="$PROJECT_DIR$/1_0.patch" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" />
       </list>
     </option>
@@ -267,7 +268,7 @@
       <updated>1560778408427</updated>
       <workItem from="1560778414037" duration="1736000" />
       <workItem from="1560941972785" duration="1925000" />
-      <workItem from="1561018881430" duration="42367000" />
+      <workItem from="1561018881430" duration="42666000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1561177115275</created>
@@ -304,11 +305,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561177679139</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1.0">
+      <created>1561177966118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561177966118</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.1">
+      <created>1561178001022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561178001022</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46028000" />
+    <option name="totallyTimeSpent" value="46327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,7 +347,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946582" visible="true" weight="0.30911064" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946582" weight="0.30911064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -340,7 +355,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49779347" weight="0.23535791" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022065" side_tool="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49946582" weight="0.32104123" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32959402" />
@@ -396,9 +411,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="。。。。。。。。。。。。。。。。。。。。" />
-    <MESSAGE value="1.1" />
     <MESSAGE value="1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
+    <MESSAGE value="1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GobangJava$text.ic" NAME="text Coverage Results" MODIFIED="1561110280850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -553,10 +568,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1_0.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state relative-caret-position="312">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
