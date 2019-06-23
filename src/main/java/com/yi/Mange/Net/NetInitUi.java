@@ -1,13 +1,9 @@
 package com.yi.Mange.Net;
-
 import com.yi.Mange.Mange;
-
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Enumeration;
-
 public class NetInitUi  extends Thread implements ActionListener{
     private Mange mange;
     private JFrame jFrame;
@@ -64,15 +60,10 @@ public class NetInitUi  extends Thread implements ActionListener{
             AbstractButton radioButton = tem.nextElement();
             if (radioButton.isSelected()){
                 if (radioButton.getText().equals("创建房间")){
-                    System.out.println("++++++++");
-                    System.out.println(this.Port.getText());
                     new Server(Integer.valueOf(this.Port.getText()),this.mange);
-                    //new Server(Integer.valueOf(this.Port.getText()));
                 }
                 if(radioButton.getText().equals("加入房间")){
-                    System.out.println("++++++++--------------");
                     new Clien(this.Address.getText(),Integer.valueOf(this.Port.getText()),this.mange);
-                    // new Clien(this.Address.getText(),Integer.valueOf(this.Port.getText()));
                 }
             }
         }

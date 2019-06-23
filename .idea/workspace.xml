@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e185e1e7-c32c-4592-8e2c-315c22162791" name="Default Changelist" comment="1.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Write.java" afterDir="false" />
+    <list default="true" id="e185e1e7-c32c-4592-8e2c-315c22162791" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yi/Logic/Ai/AI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Interact/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Interact/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yi/Interact/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yi/Interact/ChessBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yi/Factory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yi/Logic/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yi/Logic/Data.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yi/Mange/Mange.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yi/Mange/Mange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/text.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/text.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,39 +27,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+            <state relative-caret-position="-844">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#Click#0;class#Mange#0" />
-                <element signature="method#Mange#0;class#Mange#0" />
-                <element signature="method#PvP#0;class#Mange#0" />
-                <element signature="method#Ai#0;class#Mange#0" />
-                <element signature="method#line#0;class#Mange#0" />
-                <element signature="method#Read#0;class#Mange#0" />
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#3028#3029#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/ecptoma.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -71,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+            <state relative-caret-position="116">
+              <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#actionPerformed#0;class#NetInitUi#0" />
@@ -91,29 +61,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/ChessBoard.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="164">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#ChessBoard#0;class#ChessBoard#0" />
-                <element signature="method#initjframe#0;class#ChessBoard#0" />
-                <element signature="method#dowm#0;class#ChessBoard#0" />
-                <element signature="e#1960#1961#0" expanded="true" />
-                <element signature="e#1997#1998#0" expanded="true" />
-                <element signature="method#paint#0;class#ChessBoard#0" />
-                <element signature="method#mouseMoved#0;class#ChessBoard#0" />
+                <element signature="method#run#0;class#Server#0" />
+                <element signature="method#write#0;class#Server#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/Click.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -121,34 +77,70 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Write.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="24">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-              <folding>
-                <element signature="method#run#0;class#Server#0" />
-                <element signature="e#2414#2472#0" />
-              </folding>
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="331">
+              <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1723#1781#0" />
+                <element signature="method#Click#0;class#Mange#0" />
+                <element signature="method#PvP#0;class#Mange#0" />
+                <element signature="method#Ai#0;class#Mange#0" />
+                <element signature="method#line#0;class#Mange#0" />
+                <element signature="method#Read#0;class#Mange#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Logic/Ai/AI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="24" selection-start-column="24" selection-end-column="24" />
+              <folding>
+                <element signature="method#AI#0;class#AI#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1804">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/WinUi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="24" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Logic/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="14" column="9" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -161,8 +153,8 @@
         <option value="FxmlFile" />
         <option value="Enum" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -202,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Interact/Click.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/base/who.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/HeartBeat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yi/Logic/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/base/Schema.java" />
         <option value="$PROJECT_DIR$/1_0.patch" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Interact/NetLineUi.java" />
@@ -214,12 +205,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Factory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Read.java" />
         <option value="$PROJECT_DIR$/src/test/java/text.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Write.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Logic/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yi/Logic/Ai/AI.java" />
       </list>
     </option>
   </component>
@@ -231,10 +224,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
     <option name="y" value="27" />
-    <option name="width" value="960" />
-    <option name="height" value="1053" />
+    <option name="width" value="952" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -302,6 +294,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yi" type="462c0819:PsiDirectoryNode" />
               <item name="Logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GobangJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GobangJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yi" type="462c0819:PsiDirectoryNode" />
+              <item name="Logic" type="462c0819:PsiDirectoryNode" />
+              <item name="Ai" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GobangJava" type="b2602c69:ProjectViewProjectNode" />
@@ -420,7 +422,7 @@
       <updated>1560778408427</updated>
       <workItem from="1560778414037" duration="1736000" />
       <workItem from="1560941972785" duration="1925000" />
-      <workItem from="1561018881430" duration="96061000" />
+      <workItem from="1561018881430" duration="100517000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1561177115275</created>
@@ -590,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561210661304</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="1.1">
+      <created>1561291659100</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1561291659100</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99722000" />
+    <option name="totallyTimeSpent" value="104178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,10 +615,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1914" height="869" extended-state="6" />
+    <frame x="0" y="27" width="952" height="859" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24008575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29977876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -618,7 +627,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71741456" visible="true" weight="0.25203252" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.71741456" visible="true" weight="0.2541209" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -628,7 +637,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.28258547" side_tool="true" weight="0.30911064" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.47702992" weight="0.3197832" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.47702992" weight="0.31914893" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32959402" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -766,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/who.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.classpath">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-908" />
@@ -798,20 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/Schema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/chessPiecs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/NetLineUi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -826,30 +814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/WinUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="24" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Logic/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-          <folding>
-            <element signature="method#Data#0;class#Data#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,74 +880,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1723#1781#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#actionPerformed#0;class#NetInitUi#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Read.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/chessPiecs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/Schema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding>
-            <element signature="method#run#0;class#Server#0" />
-            <element signature="e#2414#2472#0" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Write.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/base/who.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Click#0;class#Mange#0" />
-            <element signature="method#Mange#0;class#Mange#0" />
-            <element signature="method#PvP#0;class#Mange#0" />
-            <element signature="method#Ai#0;class#Mange#0" />
-            <element signature="method#line#0;class#Mange#0" />
-            <element signature="method#Read#0;class#Mange#0" />
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#3028#3029#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/ChessBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="141">
           <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1010,8 +934,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/SignInUi.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1804">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Interact/WinUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="24" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Clien.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-844">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/NetInitUi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="61" column="58" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#actionPerformed#0;class#NetInitUi#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Read.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#run#0;class#Server#0" />
+            <element signature="method#write#0;class#Server#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Net/Write.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Logic/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="9" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Mange/Mange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Click#0;class#Mange#0" />
+            <element signature="method#PvP#0;class#Mange#0" />
+            <element signature="method#Ai#0;class#Mange#0" />
+            <element signature="method#line#0;class#Mange#0" />
+            <element signature="method#Read#0;class#Mange#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yi/Logic/Ai/AI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+          <folding>
+            <element signature="method#AI#0;class#AI#0" />
+          </folding>
         </state>
       </provider>
     </entry>

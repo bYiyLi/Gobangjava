@@ -8,19 +8,20 @@ import java.net.ServerSocket;
 import java.net.Socket;
 public class Server extends Thread implements Write{
     private Mange mange;
+    private int Port;
     private InputStream inputStream;
     private OutputStream outputStream;
     private ServerSocket serverSocket;
     private Socket socket;
     public Server(int Port,Mange mange){
-        System.out.println(Port);
+        this.Port=Port;
         this.mange=mange;
         this.mange.setWrite(this);
         Listener();
     }
     private void Listener(){
         try {
-            this.serverSocket=new ServerSocket(1472);
+            this.serverSocket=new ServerSocket(this.Port);
             socket = this.serverSocket.accept();
             System.out.println("开始联机");
             inputStream = socket.getInputStream();
@@ -31,7 +32,6 @@ public class Server extends Thread implements Write{
             this.mange.setDown(new ChessBoard(this.mange.getX(),this.mange.getY(),this.mange));
             this.mange.setWhoNew(who.me);
         } catch (IOException e) {
-            System.out.println("++++55555555555555555++++");
         }
         this.start();
     }

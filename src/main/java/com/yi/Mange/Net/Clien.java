@@ -8,16 +8,20 @@ import java.net.Socket;
 public class Clien  extends Thread implements Write{
     private Mange mange;
     private Socket socket;
+    private String Address;
+    private int Port;
     private InputStream inputStream;
     private OutputStream outputStream;
     public Clien(String Address, int Port, Mange mange){
+        this.Address=Address;
+        this.Port=Port;
         this.mange=mange;
         this.mange.setWrite(this);
         Connect();
     }
     private void Connect(){
         try {
-            socket=new Socket("127.0.1.1",1472);
+            socket=new Socket(this.Address,this.Port);
             inputStream=socket.getInputStream();
             byte []tem = new byte[4];
             inputStream.read(tem);
