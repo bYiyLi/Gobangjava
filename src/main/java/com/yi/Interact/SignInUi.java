@@ -1,12 +1,10 @@
 package com.yi.Interact;
 import com.yi.Mange.Mange;
 import com.yi.base.Schema;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Enumeration;
-
 public class SignInUi implements ActionListener{
     private JRadioButton Simple9;
     private JRadioButton Commonly12;

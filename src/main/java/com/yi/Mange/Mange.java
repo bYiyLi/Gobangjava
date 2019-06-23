@@ -2,10 +2,15 @@ package com.yi.Mange;
 import com.yi.Interact.*;
 import com.yi.Logic.Data;
 import com.yi.Mange.Net.NetInitUi;
+import com.yi.Mange.Net.Read;
+import com.yi.Mange.Net.Write;
 import com.yi.base.Schema;
 import com.yi.base.chessPiecs;
 import com.yi.base.who;
-public class Mange implements Click {
+public class Mange implements Click ,Read{
+    private int X;
+    private  int Y;
+    private Write write;
     private Data data;
     private who whoNew;
     private ecptoma down;
@@ -22,13 +27,15 @@ public class Mange implements Click {
         }
     }
     public Mange(int x,int y,Schema tem){
+        this.Y=y;
+        this.X=x;
         schema=tem;
         if (this.schema.equals(Schema.PvP)){
             data=new Data(x,y);
             down=new ChessBoard(x,y,this);
             whoNew=who.me;
         }else if (this.schema.equals(Schema.line)){
-            new NetInitUi();
+            new NetInitUi(x,y,this);
         }
     }
     private void PvP(int x,int y)  {
@@ -53,8 +60,58 @@ public class Mange implements Click {
     }
     private void Ai(int x,int y){
 
+
     }
     private void line(int x,int y){
-
+        boolean t=false;
+        if (whoNew.equals(who.me)){
+            write.write(x,y);
+            t=data.judge(x,y,chessPiecs.me);
+            down.dowm(x,y, chessPiecs.me);
+            if (t){
+                new WinUi(who.me);
+                ((ChessBoard) this.down).closeWin();
+           }
+            whoNew=who.other;
+        }
+    }
+    public void Read(int x,int y) {
+        boolean t=false;
+        if (whoNew.equals(who.other)){
+            t=data.judge(x,y,chessPiecs.other);
+            down.dowm(x,y, chessPiecs.other);
+            if (t){
+                new WinUi(who.other);
+                ((ChessBoard) this.down).closeWin();
+            }
+            whoNew=who.me;
+        }
+    }
+    public int getX() {
+        return X;
+    }
+    public int getY() {
+        return Y;
+    }
+    public void setX(int x) {
+        X = x;
+    }
+    public void setY(int y) {
+        Y = y;
+    }
+    public void setData(Data data) {
+        this.data = data;
+    }
+    public void setDown(ecptoma down) {
+        this.down = down;
+    }
+    public  who getWhoNew() {
+        return this.whoNew;
+    }
+    public void setWhoNew(who whoNew) {
+        this.whoNew = whoNew;
+    }
+    public void setWrite(Write write) {
+        this.write = write;
     }
 }

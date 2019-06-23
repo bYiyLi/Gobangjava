@@ -86,7 +86,6 @@ public class ChessBoard extends JPanel implements ecptoma ,MouseListener, MouseM
     public void mouseClicked(MouseEvent e) {
         if(this.MouseNowY>=0&&this.MouseNowY<=this.H&&this.MouseNowX>=0&&this.MouseNowX<=this.W) {
             click.Click(this.MouseNowX, this.MouseNowY);
-            System.out.println(this.MouseNowX+"  "+this.MouseNowY);
         }
     }
     public void mousePressed(MouseEvent e) { }

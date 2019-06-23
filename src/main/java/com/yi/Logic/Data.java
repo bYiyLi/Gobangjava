@@ -1,7 +1,5 @@
 package com.yi.Logic;
-
 import com.yi.base.chessPiecs;
-
 public class Data {
     private int X;
     private int Y;

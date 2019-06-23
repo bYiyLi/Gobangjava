@@ -10,8 +10,9 @@ import java.net.UnknownHostException;
 
 public class text {
     public static void main(String[] args) throws InterruptedException {
-        new Server(8080);
-        Thread.sleep(1000);
-        new Clien("127.0.0.1",8080);
+        new SignInUi();
+//        Byte a[]=new Byte[4];
+//        System.out.println(a.length);
+
     }
 }

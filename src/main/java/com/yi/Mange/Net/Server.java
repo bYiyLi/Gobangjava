@@ -1,39 +1,69 @@
 package com.yi.Mange.Net;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.yi.Interact.ChessBoard;
+import com.yi.Logic.Data;
+import com.yi.Mange.Mange;
+import com.yi.base.who;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
-
-public class Server {
-    private String Address;
-    private int Port;
-    private BufferedReader InputReader;
-    private BufferedReader  OutputReader;
+public class Server extends Thread implements Write{
+    private Mange mange;
+    private InputStream inputStream;
+    private OutputStream outputStream;
     private ServerSocket serverSocket;
     private Socket socket;
-    public Server(int Port){
-        this.Port=Port;
+    public Server(int Port,Mange mange){
+        System.out.println(Port);
+        this.mange=mange;
+        this.mange.setWrite(this);
         Listener();
     }
-    private void Listener()  {
+    private void Listener(){
         try {
-            serverSocket=new ServerSocket(this.Port);
-            System.out.println("++++++++++++++++");
-            socket=serverSocket.accept();
-            InputReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            System.out.println(InputReader.readLine());
+            this.serverSocket=new ServerSocket(1472);
+            socket = this.serverSocket.accept();
+            System.out.println("开始联机");
+            inputStream = socket.getInputStream();
+            outputStream=socket.getOutputStream();
+            byte []tem=(String.valueOf(this.mange.getX())+String.valueOf(this.mange.getY())).getBytes();
+            outputStream.write(tem);
+            this.mange.setData(new Data(this.mange.getX(),this.mange.getY()));
+            this.mange.setDown(new ChessBoard(this.mange.getX(),this.mange.getY(),this.mange));
+            this.mange.setWhoNew(who.me);
+        } catch (IOException e) {
+            System.out.println("++++55555555555555555++++");
+        }
+        this.start();
+    }
+    @Override
+    public void run() {
+        super.run();
+        while (true){
+            if (this.mange.getWhoNew().equals(who.other)){
+                boolean t=false;
+                try {
+                    byte []tem = new byte[6];
+                    this.inputStream.read(tem);
+                    String a[]= new String(tem).split(",");
+                    this.mange.Read(Integer.valueOf(a[0]),Integer.valueOf(a[1]));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }else {
+                try {
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    public void write(int x, int y) {
+        try {
+            String tem=String.valueOf(x)+","+String.valueOf(y)+",";
+            this.outputStream.write(tem.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        finally {
-            try {
-                socket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-
     }
 }
