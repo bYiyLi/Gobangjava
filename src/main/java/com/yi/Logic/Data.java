@@ -1,8 +1,7 @@
 package com.yi.Logic;
 import com.yi.base.chessPiecs;
 public class Data {
-    private int X;
-    private int Y;
+    private int X,Y;
     private chessPiecs piecs[][];
     public Data(int x,int y){
         this.X=x;
@@ -16,74 +15,48 @@ public class Data {
     }
     public boolean judge(int x, int y, chessPiecs tem) {
         this.piecs[x][y]=tem;
-        int temx=x;
-        int temy=y;
+        int temx=x,temy=y;
         int n=0;
         while (temx>=0&&temx<this.X&&piecs[temx][temy]==tem){
-            temx++;
-            n++;
+            temx++;n++;
         }
         temx=x;
         while (temx>=0&&temx<this.X&&piecs[temx][temy]==tem){
-            temx--;
-            n++;
+            temx--;n++;
         }
         if (n>5){
             return true;
         }
-        temx=x;
-        temy=y;
+        temx=x;temy=y;
         n=0;
         while (temy>=0&&temy<this.Y&&piecs[temx][temy]==tem){
-            temy++;
-            n++;
+            temy++;n++;
         }
-        temx=x;
-        temy=y;
+        temx=x;temy=y;
         while (temy>=0&&temy<this.X&&piecs[temx][temy]==tem){
-            temy--;
-            n++;
+            temy--;n++;
         }
-        if (n>5){
-            System.out.println();
-            return true;
-        }
-        temx=x;
-        temy=y;
-        n=0;
+        if (n>5){ return true; }
+        temx=x;temy=y;n=0;
         while (temx>=0&&temy>=0&&temx<this.X&&temy<this.Y&&piecs[temx][temy]==tem){
-            temx++;
-            temy++;
-            n++;
+            temx++;temy++;n++;
         }
-        temx=x;
-        temy=y;
+        temx=x;temy=y;
         while (temx>=0&&temy>=0&&temx<this.X&&temy<this.Y&&piecs[temx][temy]==tem){
-            temx--;
-            temy--;
-            n++;
+            temx--;temy--;n++;
         }
         if (n>5){
             return true;
         }
-        temx=x;
-        temy=y;
-        n=0;
+        temx=x;temy=y;n=0;
         while (temx>=0&&temy>=0&&temx<this.X&&temy<this.Y&&piecs[temx][temy]==tem){
-            temx++;
-            temy--;
-            n++;
+            temx++;temy--;n++;
         }
-        temx=x;
-        temy=y;
+        temx=x;temy=y;
         while (temx>=0&&temy>=0&&temx<this.X&&temy<this.Y&&piecs[temx][temy]==tem){
-            temx--;
-            temy++;
-            n++;
+            temx--;temy++;n++;
         }
-        if (n>5){
-            return true;
-        }
+        if (n>5){ return true; }
         return false;
     }
 }

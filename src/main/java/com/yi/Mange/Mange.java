@@ -104,31 +104,13 @@ public class Mange implements Click ,Read{
             whoNew=who.me;
         }
     }
-    public int getX() {
-        return X;
-    }
-    public int getY() {
-        return Y;
-    }
-    public void setX(int x) {
-        X = x;
-    }
-    public void setY(int y) {
-        Y = y;
-    }
-    public void setData(Data data) {
-        this.data = data;
-    }
-    public void setDown(ecptoma down) {
-        this.down = down;
-    }
-    public  who getWhoNew() {
-        return this.whoNew;
-    }
-    public void setWhoNew(who whoNew) {
-        this.whoNew = whoNew;
-    }
-    public void setWrite(Write write) {
-        this.write = write;
-    }
+    public int getX() { return X; }
+    public int getY() { return Y; }
+    public void setX(int x) { X = x; }
+    public void setY(int y) { Y = y; }
+    public void setData(Data data) { this.data = data; }
+    public void setDown(ecptoma down) { this.down = down; }
+    public  who getWhoNew() { return this.whoNew; }
+    public void setWhoNew(who whoNew) { this.whoNew = whoNew; }
+    public void setWrite(Write write) { this.write = write; }
 }

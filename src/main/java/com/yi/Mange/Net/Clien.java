@@ -32,10 +32,7 @@ public class Clien  extends Thread implements Write{
             this.mange.setData(new Data(this.mange.getX(),this.mange.getY()));
             this.mange.setDown(new ChessBoard(this.mange.getX(),this.mange.getY(),this.mange));
             this.mange.setWhoNew(who.other);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("------------------------");
-        }
+        } catch (IOException e) { e.printStackTrace(); }
         this.start();
     }
     @Override
@@ -50,15 +47,11 @@ public class Clien  extends Thread implements Write{
                     this.inputStream.read(tem);
                     String a[]= new String(tem).split(",");
                     this.mange.Read(Integer.valueOf(a[0]),Integer.valueOf(a[1]));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                } catch (IOException e) { e.printStackTrace(); }
             }else {
                 try {
                     Thread.sleep(300);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                } catch (InterruptedException e) { e.printStackTrace(); }
             }
         }
     }
@@ -66,8 +59,6 @@ public class Clien  extends Thread implements Write{
         try {
             String tem=String.valueOf(x)+","+String.valueOf(y)+",";
             this.outputStream.write(tem.getBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException e) { e.printStackTrace(); }
     }
 }

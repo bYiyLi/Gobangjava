@@ -1,6 +1,2 @@
 package com.yi.base;
-
-public enum who {
-    me,
-    other
-}
+public enum who {me, other}

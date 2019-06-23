@@ -16,9 +16,7 @@ public class SignInUi implements ActionListener{
     private JRadioButton onLine;
     private JFrame jFrame;
     private JButton SignInButton;
-    public SignInUi(){
-        initJframe();
-    }
+    public SignInUi(){ initJframe(); }
     private void initJframe(){
         this.jFrame=new JFrame("欢迎界面");
         this.jFrame.setSize(600,400);
@@ -61,8 +59,7 @@ public class SignInUi implements ActionListener{
         this.onLine.setBounds(400,180,100,50);
     }
     public void actionPerformed(ActionEvent e) {
-        int temX=0;
-        int temY = 0;
+        int temX=0,temY = 0;
         Schema schema = Schema.PvP;
         Enumeration<AbstractButton> enu1 = Pattern.getElements();
         while (enu1.hasMoreElements()) {

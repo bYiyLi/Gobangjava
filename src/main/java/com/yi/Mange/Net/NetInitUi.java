@@ -61,8 +61,7 @@ public class NetInitUi  extends Thread implements ActionListener{
             if (radioButton.isSelected()){
                 if (radioButton.getText().equals("创建房间")){
                     new Server(Integer.valueOf(this.Port.getText()),this.mange);
-                }
-                if(radioButton.getText().equals("加入房间")){
+                }else if(radioButton.getText().equals("加入房间")){
                     new Clien(this.Address.getText(),Integer.valueOf(this.Port.getText()),this.mange);
                 }
             }

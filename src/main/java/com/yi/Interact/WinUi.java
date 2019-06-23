@@ -25,13 +25,10 @@ public class WinUi implements ActionListener{
         this.jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     public void actionPerformed(ActionEvent e) {
-
         try {
             this.jFrame.setTitle("游戏结束");
             Thread.sleep(1000);
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
+        } catch (InterruptedException ex) { ex.printStackTrace(); }
         this.jFrame.dispose();
     }
 }
