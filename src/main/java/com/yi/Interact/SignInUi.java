@@ -1,26 +1,30 @@
 package com.yi.Interact;
-import com.yi.Mange.Mange;
+import com.yi.Manage.Mange;
 import com.yi.base.Schema;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Enumeration;
 public class SignInUi implements ActionListener{
-    private JRadioButton Simple9;
-    private JRadioButton Commonly12;
-    private JRadioButton Difficulty18;
-    private ButtonGroup Pattern;
-    private ButtonGroup TypeGame;
-    private JRadioButton standAlone;
-    private JRadioButton PvP;
-    private JRadioButton onLine;
-    private JFrame jFrame;
-    private JButton SignInButton;
+    private JRadioButton Simple9;//12X12
+    private JRadioButton Commonly12;//16X16
+    private JRadioButton Difficulty18;//18X18
+    private ButtonGroup Pattern;//
+    private ButtonGroup TypeGame;//游戏模式管理保证只有点击一个模式
+    private JRadioButton standAlone;//ai单机模式
+    private JRadioButton PvP;//PVP  模式
+    private JRadioButton onLine;//联网模式
+    private JFrame jFrame;//窗口
+    private JButton SignInButton;//按钮
     public SignInUi(){ initJframe(); }
-    private void initJframe(){
+    private void initJframe(){//初始化选择窗口
         this.jFrame=new JFrame("欢迎界面");
         this.jFrame.setSize(600,400);
         this.jFrame.setLayout(null);
+       // ImageIcon imageIconBj=new ImageIcon("src/main/resources/gobangInit.jpg");
+       // JLabel jLabel=new JLabel(imageIconBj);
+       // jLabel.setBounds(0,0,600,400);
+      //  this.jFrame.add(jLabel);
         initButton();
         this.jFrame.add(this.Simple9);
         this.jFrame.add(this.Commonly12);
@@ -32,10 +36,12 @@ public class SignInUi implements ActionListener{
         this.jFrame.setResizable(false);
         this.jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    private void initButton(){
+    private void initButton(){//初始化窗口里的布局
         this.SignInButton=new JButton("进入游戏");
+      //  this.SignInButton.setIcon(new ImageIcon("src/main/resources/gotoGame.jpg"));
         this.SignInButton.addActionListener(this);
         this.SignInButton.setBounds(120,240,320,50);
+        this.SignInButton.setBorderPainted(false);
         this.jFrame.add(this.SignInButton);
         this.Simple9=new JRadioButton("12X12");
         this.Commonly12=new JRadioButton("16X16",true);
@@ -58,11 +64,11 @@ public class SignInUi implements ActionListener{
         this.PvP.setBounds(250,180,100,50);
         this.onLine.setBounds(400,180,100,50);
     }
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {//点击进入游戏后的要new那个对象
         int temX=0,temY = 0;
         Schema schema = Schema.PvP;
         Enumeration<AbstractButton> enu1 = Pattern.getElements();
-        while (enu1.hasMoreElements()) {
+        while (enu1.hasMoreElements()) {//判断选择那个大小
             AbstractButton radioButton = enu1.nextElement();
             if (radioButton.isSelected()){
                 if ("12X12".equals(radioButton.getText())) {
@@ -77,7 +83,7 @@ public class SignInUi implements ActionListener{
             }
         }
         Enumeration<AbstractButton> enu2 = TypeGame.getElements();
-        while (enu2.hasMoreElements()) {
+        while (enu2.hasMoreElements()) {//判断选择那种类型
             AbstractButton radioButton = enu2.nextElement();
             if (radioButton.isSelected()){
                 if ("对战".equals(radioButton.getText())) {
@@ -91,6 +97,10 @@ public class SignInUi implements ActionListener{
                 }
             }
         }
-        new Mange(temX,temY,schema);
+        new Mange(temX,temY,schema);//new 管理对象
+    }
+
+    public static void main(String[] args) {
+        new SignInUi();
     }
 }

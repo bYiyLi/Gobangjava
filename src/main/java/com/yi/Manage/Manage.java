@@ -1,38 +1,38 @@
-package com.yi.Mange;
+package com.yi.Manage;
 import com.yi.Interact.*;
 import com.yi.Logic.Ai.AI;
 import com.yi.Logic.Data;
-import com.yi.Mange.Net.NetInitUi;
-import com.yi.Mange.Net.Read;
-import com.yi.Mange.Net.Write;
+import com.yi.Manage.Net.NetInitUi;
+import com.yi.Manage.Net.Read;
+import com.yi.Manage.Net.Write;
 import com.yi.base.Schema;
 import com.yi.base.chessPiecs;
 import com.yi.base.who;
 public class Mange implements Click ,Read{
-    private int X,Y;
+    private int X,Y;//棋盘大小
     private AI ai;
-    private Write write;
+    private Write write;//联网模式下发送数据到对面棋盘管理对象里
     private Data data;
-    private who whoNew;
-    private ecptoma down;
-    private Schema schema;
-    public Mange(int x,int y,Schema tem){
+    private who whoNew;//目前是谁下
+    private ecptoma down;//棋盘
+    private Schema schema;//游戏模式
+    public Mange(int x,int y,Schema tem){//初始化内部对象
         this.Y=y;
         this.X=x;
         schema=tem;
-        if (this.schema.equals(Schema.PvP)){
-            data=new Data(this.X,this.Y);
-            down=new ChessBoard(this.X,this.Y,this);
+        if (this.schema.equals(Schema.PvP)){//判断游戏模式是不是PVP
+            data=new Data(this.X,this.Y);//本地保存棋子数据
+            down=new ChessBoard(this.X,this.Y,this);//棋盘
             whoNew=who.me;
-        }else if (this.schema.equals(Schema.line)){
-            new NetInitUi(this.X,this.Y,this);
-        }else if (this.schema.equals(Schema.Ai)){
-            ai=new AI(this.X,this.Y);
-            data=new Data(this.X,this.Y);
-            down=new ChessBoard(this.X,this.Y,this);
+        }else if (this.schema.equals(Schema.line)){//判断游戏模式是不是联网模式
+            new NetInitUi(this.X,this.Y,this);//进入联网模式配置
+        }else if (this.schema.equals(Schema.Ai)){//判断游戏模式是不是Ai模式
+            ai=new AI(this.X,this.Y);//Ai  对象
+            data=new Data(this.X,this.Y);//本地保存棋子数据
+            down=new ChessBoard(this.X,this.Y,this);//棋盘
         }
     }
-    public void Click(int x, int y) {
+    public void Click(int x, int y) {//下棋时调用函数，判断进入那个模式函数
         if (schema==Schema.PvP){
             PvP(x, y);
         }
@@ -43,7 +43,7 @@ public class Mange implements Click ,Read{
             line(x,y);
         }
     }
-    private void PvP(int x,int y)  {
+    private void PvP(int x,int y)  {//PVP模式的逻辑处理函数
         boolean t=false;
         if (whoNew==who.me){
             t=data.judge(x,y,chessPiecs.me);
@@ -64,7 +64,7 @@ public class Mange implements Click ,Read{
             }
         }
     }
-    private void Ai(int x,int y){
+    private void Ai(int x,int y){//人机对战函数
         boolean t=data.judge(x,y,chessPiecs.me);
         down.dowm(x,y, chessPiecs.me);
         if (t){
@@ -79,7 +79,7 @@ public class Mange implements Click ,Read{
             ((ChessBoard) this.down).closeWin();
         }
     }
-    private void line(int x,int y){
+    private void line(int x,int y){//联网对战函数
         boolean t=false;
         if (whoNew.equals(who.me)){
             write.write(x,y);
@@ -92,7 +92,7 @@ public class Mange implements Click ,Read{
             whoNew=who.other;
         }
     }
-    public void Read(int x,int y) {
+    public void Read(int x,int y) {//联网模式下的将对面的棋显示在自己的棋盘上
         boolean t=false;
         if (whoNew.equals(who.other)){
             t=data.judge(x,y,chessPiecs.other);
@@ -104,6 +104,7 @@ public class Mange implements Click ,Read{
             whoNew=who.me;
         }
     }
+
     public int getX() { return X; }
     public int getY() { return Y; }
     public void setX(int x) { X = x; }

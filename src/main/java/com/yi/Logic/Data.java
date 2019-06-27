@@ -3,7 +3,7 @@ import com.yi.base.chessPiecs;
 public class Data {
     private int X,Y;
     private chessPiecs piecs[][];
-    public Data(int x,int y){
+    public Data(int x,int y){//初始化数据
         this.X=x;
         this.Y=y;
         piecs=new chessPiecs[x][y];
@@ -13,7 +13,7 @@ public class Data {
             }
         }
     }
-    public boolean judge(int x, int y, chessPiecs tem) {
+    public boolean judge(int x, int y, chessPiecs tem) {//判断是否结束
         this.piecs[x][y]=tem;
         int temx=x,temy=y;
         int n=0;

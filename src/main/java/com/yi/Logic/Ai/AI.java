@@ -1,5 +1,8 @@
 package com.yi.Logic.Ai;
 import com.yi.base.chessPiecs;
+/*
+Ai模式：时间不够，来不及写
+ */
 public class AI extends Thread{
     private int X;
     private int Y;
@@ -17,8 +20,7 @@ public class AI extends Thread{
     public int[] getAIdown(int x,int y){
         this.piecs[x][y]=chessPiecs.other;
         int temXY[]=new int[2];
-        temXY[0]=0;
-        temXY[1]=0;
+
         return temXY;
     }
     @Override

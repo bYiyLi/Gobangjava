@@ -2,11 +2,11 @@ package com.yi.Interact;
 import com.yi.base.who;
 import javax.swing.*;
 import java.awt.event.*;
-public class WinUi implements ActionListener{
+public class WinUi implements ActionListener{//游戏结束有人胜利对象
     private JFrame jFrame;
     ImageIcon image=null;
     JButton jbutton;
-    public WinUi(who winner){
+    public WinUi(who winner){//初始化各种对象
         if (winner==who.me){
             image= new ImageIcon("src/main/resources/image1.png");
         }else if (winner==who.other) {
@@ -24,7 +24,7 @@ public class WinUi implements ActionListener{
         this.jFrame.setResizable(false);
         this.jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {//点击时触发
         try {
             this.jFrame.setTitle("游戏结束");
             Thread.sleep(1000);
